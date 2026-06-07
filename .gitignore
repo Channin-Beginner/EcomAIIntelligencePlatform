@@ -27,13 +27,21 @@ models/**/*.safetensors
 upload/
 *.log
 
-灌注数据
-sql
+/灌注数据
+/sql
 
-mall
+/mall
 
-项目
+/项目
 
-markdown文档
+/markdown文档
 
-test*
+/test*.py
+/test_main.http
+
+# Cursor 本地会话（按 AGENTS.md 约定）
+.cursor/conversations/
+.cursor/sessions/
+
+# 根目录 Python 虚拟环境（已有 venv/）
+__pycache__/
