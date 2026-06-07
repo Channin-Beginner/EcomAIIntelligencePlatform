@@ -1,0 +1,8 @@
+---
+description: After adding a skill, run skills-maintain.py (see ~/.cursor/.cursor.md rule 3)
+alwaysApply: true
+---
+
+新增或安装 skill 后，执行：
+
+`python C:\Users\23628\.cursor\scripts\skills-maintain.py`

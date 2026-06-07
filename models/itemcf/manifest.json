@@ -1,0 +1,26 @@
+{
+  "algorithm": "ItemCF",
+  "similarity": "tuned_hybrid_basket_behavior_content",
+  "tuning": {
+    "alpha": 0.6,
+    "category_weight": 0.15,
+    "brand_weight": 0.1
+  },
+  "trained_at": "2026-06-06T15:44:20.658807+00:00",
+  "n_users": 3001,
+  "n_items": 330,
+  "n_interactions": 157972,
+  "top_k_similar": 50,
+  "metrics": {
+    "hr_at_10": 0.1166,
+    "hr_at_10_all_signals": 0.1166,
+    "hr_at_10_order_holdout": 0.1938
+  },
+  "event_weights": {
+    "order": 8.0,
+    "cart": 4.0,
+    "fav": 3.0,
+    "click": 1.5,
+    "pv": 0.5
+  }
+}
