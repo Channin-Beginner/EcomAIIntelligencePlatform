@@ -26,3 +26,14 @@ models/**/*.safetensors
 # 上传目录、日志
 upload/
 *.log
+
+灌注数据
+sql
+
+mall
+
+项目
+
+markdown文档
+
+test*
