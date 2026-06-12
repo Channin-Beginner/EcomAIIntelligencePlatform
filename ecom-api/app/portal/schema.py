@@ -1,10 +1,13 @@
 """Ensure Portal-specific DDL exists (idempotent on startup)."""
 
+import logging
 from pathlib import Path
 
 from sqlalchemy import text
 
 from app.database import get_engine
+
+logger = logging.getLogger("ecom.portal.schema")
 
 ROOT = Path(__file__).resolve().parents[3]
 DDL_DIR = ROOT / "sql" / "ddl"
@@ -21,7 +24,9 @@ def ensure_portal_tables() -> None:
         for name in PORTAL_DDL_FILES:
             path = DDL_DIR / name
             if not path.exists():
+                logger.warning("Portal DDL file missing, skipped: %s", path)
                 continue
+            logger.info("Applying portal DDL: %s", name)
             sql = path.read_text(encoding="utf-8")
             for stmt in _split_sql_statements(sql):
                 conn.execute(text(stmt))

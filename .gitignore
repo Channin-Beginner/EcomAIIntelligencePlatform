@@ -45,3 +45,5 @@ upload/
 
 # 根目录 Python 虚拟环境（已有 venv/）
 __pycache__/
+
+*logs

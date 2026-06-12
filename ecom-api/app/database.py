@@ -1,11 +1,14 @@
 from collections.abc import Generator
 from contextlib import contextmanager
+import logging
 
 from sqlalchemy import create_engine, text
 from sqlalchemy.engine import Engine, RowMapping
 from sqlalchemy.orm import Session, sessionmaker
 
 from app.config import get_settings
+
+logger = logging.getLogger("ecom.database")
 
 _engine: Engine | None = None
 _SessionLocal: sessionmaker[Session] | None = None
@@ -46,6 +49,7 @@ def db_session() -> Generator[Session, None, None]:
         db.commit()
     except Exception:
         db.rollback()
+        logger.exception("Database transaction rolled back")
         raise
     finally:
         db.close()
