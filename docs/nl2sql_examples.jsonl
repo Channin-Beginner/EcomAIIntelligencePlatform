@@ -1,8 +1,0 @@
-{"question": "2025年6月15日当天的GMV和订单数是多少", "sql": "SELECT stat_date, order_count, gmv FROM ads_order_daily WHERE stat_date = '2025-06-15' LIMIT 1", "chartType": "table", "title": "当日核心指标"}
-{"question": "展示近30天GMV趋势折线图", "sql": "SELECT stat_date, gmv, order_count FROM ads_order_daily WHERE stat_date >= DATE_SUB('2025-06-15', INTERVAL 29 DAY) AND stat_date <= '2025-06-15' ORDER BY stat_date LIMIT 500", "chartType": "line", "title": "近30日GMV趋势"}
-{"question": "2025-06-15转化漏斗各阶段人数", "sql": "SELECT pv_count, click_count, cart_count, fav_count, order_event_count FROM ads_funnel_daily WHERE stat_date = '2025-06-15' LIMIT 1", "chartType": "funnel", "title": "转化漏斗"}
-{"question": "当日UV和PV是多少", "sql": "SELECT uv, pv, active_member_count FROM ads_member_active WHERE stat_date = '2025-06-15' LIMIT 1", "chartType": "table", "title": "当日活跃"}
-{"question": "地域销售TOP5省份", "sql": "SELECT province, order_count, gmv FROM ads_region_sales WHERE stat_date = '2025-06-15' ORDER BY gmv DESC LIMIT 5", "chartType": "bar", "title": "地域销售TOP5"}
-{"question": "热销商品TOP10", "sql": "SELECT product_name, order_count, gmv FROM ads_product_top WHERE stat_date = '2025-06-15' ORDER BY rank_num LIMIT 10", "chartType": "bar", "title": "热销商品TOP10"}
-{"question": "6月15日24小时销售额曲线", "sql": "SELECT stat_hour, gmv, order_count FROM ads_order_hourly WHERE stat_date = '2025-06-15' ORDER BY stat_hour LIMIT 24", "chartType": "line", "title": "24小时销售曲线"}
-{"question": "订单状态分布", "sql": "SELECT status_name, order_count FROM ads_order_status WHERE stat_date = '2025-06-15' ORDER BY order_count DESC LIMIT 10", "chartType": "pie", "title": "订单状态分布"}
