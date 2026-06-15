@@ -97,7 +97,7 @@ npm run dev
 ![运营端图片](static/OperationSide.png)
 
 EcomAI助手：
-![AI助手图片](static/BIAl.png)
+![AI助手图片](static/BIAI.png)
 
 ## 6. 推荐与行为闭环
 
