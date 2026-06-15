@@ -191,34 +191,6 @@ const chartOption = computed(() => {
 
 <template>
   <div class="app-container">
-    <div class="address-layout">
-      <el-row :gutter="20">
-        <el-col :span="6">
-          <div class="out-border">
-            <div class="layout-title">Spring Boot项目学习</div>
-            <div class="color-main address-content">
-              <a href="https://www.macrozheng.com" target="_blank">mall学习教程</a>
-            </div>
-          </div>
-        </el-col>
-        <el-col :span="6">
-          <div class="out-border">
-            <div class="layout-title">Spring Cloud项目学习</div>
-            <div class="color-main address-content">
-              <a href="https://cloud.macrozheng.com" target="_blank">mall-swarm学习教程</a>
-            </div>
-          </div>
-        </el-col>
-        <el-col :span="6">
-          <div class="out-border">
-            <div class="layout-title">点Star支持项目</div>
-            <div class="color-main address-content">
-              <a href="https://github.com/macrozheng/mall" target="_blank">mall项目</a>
-            </div>
-          </div>
-        </el-col>
-      </el-row>
-    </div>
     <div class="total-layout">
       <el-row :gutter="20">
         <el-col :span="6">
@@ -244,14 +216,6 @@ const chartOption = computed(() => {
         </el-col>
       </el-row>
     </div>
-    <el-card class="mine-layout">
-      <div style="text-align: center">
-        <img width="140px" height="140px"
-          src="http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/banner/qrcode_for_macrozheng_258.jpg">
-      </div>
-      <div style="text-align: center">扫码关注作者<span class="color-main">公众号</span></div>
-      <div style="text-align: center;margin-top: 5px">获取更多技术干货</div>
-    </el-card>
     <div class="un-handle-layout">
       <div class="layout-title">待处理事务</div>
       <div class="un-handle-content">
@@ -499,18 +463,5 @@ const chartOption = computed(() => {
 .statistics-layout {
   margin-top: 20px;
   border: 1px solid #DCDFE6;
-}
-
-.mine-layout {
-  position: absolute;
-  right: 140px;
-  top: 107px;
-  width: 250px;
-  height: 235px;
-}
-
-.address-content {
-  padding: 20px;
-  font-size: 18px
 }
 </style>

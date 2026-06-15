@@ -47,3 +47,10 @@ upload/
 __pycache__/
 
 *logs
+
+/docs
+
+/.gitignore
+
+/scripts
+

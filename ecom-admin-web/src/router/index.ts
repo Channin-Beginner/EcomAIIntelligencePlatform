@@ -17,18 +17,6 @@ export const constantRouterMap: RouteRecordExt[] = [
         component: () => import('@/views/home/index.vue'),
         meta: { title: '首页', icon: 'dashboard' },
       },
-      {
-        name: 'document',
-        path: 'https://www.macrozheng.com',
-        component: () => import('@/views/normal/link/index.vue'),
-        meta: { title: '学习教程', icon: 'document' },
-      },
-      {
-        name: 'video',
-        path: 'https://www.macrozheng.com/mall/foreword/mall_video.html',
-        component: () => import('@/views/normal/link/index.vue'),
-        meta: { title: '视频教程', icon: 'video' },
-      },
       // {
       //   path: 'test',
       //   name: 'test',
