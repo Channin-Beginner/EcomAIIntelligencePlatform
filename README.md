@@ -55,6 +55,9 @@ npm run dev
 
 访问 <http://127.0.0.1:8090>，默认账号 **admin / macro123**。
 
+管理端：
+![管理端图片](static/ManagementSide.png)
+
 ## 4. 启动用户端（PC 商城）
 
 ```powershell
@@ -67,6 +70,9 @@ npm run dev
 ```
 
 访问 <http://127.0.0.1:5173>，默认会员 **test / 123456**。
+
+用户端：
+![用户端图片](static/ClientSide.png)
 
 ## 5. 启动运营端（阶段三大屏）
 
@@ -86,6 +92,12 @@ npm run dev
 
 大屏 8 模块：核心 KPI、24h 曲线、转化漏斗、UV/PV、地域 TOP、30 日趋势、热销 TOP、订单状态。  
 指标口径见 `docs/ads_metrics.md`。
+
+运营端：
+![运营端图片](static/OperationSide.png)
+
+EcomAI助手：
+![AI助手图片](static/BIAl.png)
 
 ## 6. 推荐与行为闭环
 
